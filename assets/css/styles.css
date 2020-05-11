@@ -1,0 +1,212 @@
+@import url("https://fonts.googleapis.com/css2?family=Merienda&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
+:root {
+  --primary-color: #00A24D;
+  --secondary-color:#A8CF45;
+  --third-color: #FF927D;
+  --normal-color:#333333; }
+
+:root {
+  --h1-font-size:2rem;
+  --h2-font-size: 1.5rem;
+  --h3-font-size: 1.25rem;
+  --small-font-size:.95rem; }
+
+*, *::before, *::after {
+  box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: 'Merienda', cursive, sans-serif; }
+
+a {
+  text-decoration: none; }
+
+ul {
+  padding-left: 0;
+  list-style: none;
+  margin: 0; }
+
+img {
+  width: 100%; }
+
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 0; }
+
+h1 {
+  font-size: var(--h1-font-size); }
+
+h2 {
+  font-size: var(--h2-font-size); }
+
+.center-block {
+  margin-left: auto;
+  margin-right: auto; }
+
+.center-content {
+  text-align: center; }
+
+.l-container {
+  margin-right: 4rem;
+  margin-left: 4rem; }
+
+.main-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem 0 0; }
+
+.img {
+  width: 15%; }
+
+.main-header__title {
+  font-size: var(--small-font-size);
+  color: var(--third-color);
+  font-weight: bold; }
+
+.main-nav {
+  border: 1px solid var(--primary-color); }
+
+.main-menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 .5rem;
+  margin: 0 6rem 0 6rem;
+  flex: 1; }
+
+.main-menu__item {
+  width: 100%;
+  height: 100%;
+  margin-left: .5rem;
+  margin-right: .5rem;
+  padding: .5rem;
+  text-align: center; }
+
+.main-menu__link {
+  color: var(--normal-color); }
+
+.last {
+  color: var(--secondary-color); }
+
+.fixed_1 {
+  border-bottom: 1px solid var(--third-color); }
+
+.showcase {
+  margin-top: 0;
+  background-color: var(--secondary-color);
+  height: auto;
+  display: grid;
+  grid-gap: 25px;
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 2.5rem; }
+
+.border {
+  border: 8px dashed #CAED6F;
+  border-radius: 50%;
+  padding: .5rem; }
+
+.showcase-title {
+  color: white;
+  background-color: red; }
+
+.showcase-images {
+  background: green; }
+
+.top-container {
+  max-width: 1200px;
+  margin-top: 1rem;
+  display: grid;
+  gap: 20px;
+  grid-template-areas: 'cards cards recipe' 'cards cards recipe'; }
+
+.cards {
+  grid-area: cards;
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  flex-wrap: wrap; }
+
+.video-cards {
+  grid-area: cards;
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
+  flex-wrap: wrap; }
+
+.cards-container {
+  padding: 1rem; }
+
+.cards-item {
+  box-shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+  border-radius: 5%; }
+
+.cards-item__title {
+  color: var(--primary-color);
+  margin-bottom: 0; }
+
+.cards-item__paragraph {
+  margin-top: 0;
+  font-size: .9rem;
+  font-family: Roboto;
+  font-weight: bold; }
+
+.cards img {
+  display: block; }
+
+.recipe {
+  width: 280px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+  border-radius: 2%; }
+
+.recipe-card__title {
+  margin-top: .5rem;
+  color: var(--primary-color); }
+
+.recipe-card__paragraph {
+  font-size: .9rem;
+  padding: .5rem;
+  color: #6E766E; }
+
+.recipe-card__link {
+  display: block;
+  padding-left: .5rem;
+  color: var(--third-color); }
+
+.cards-recipe {
+  grid-area: cards;
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  flex-wrap: wrap; }
+
+.text {
+  font-size: .9rem;
+  font-family: Roboto;
+  font-weight: bold; }
+
+.footer {
+  background-color: var(--secondary-color); }
+
+.icons-footer {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 1rem; }
+
+.paragraph {
+  padding-top: 1rem; }
+
+.img {
+  color: white; }
