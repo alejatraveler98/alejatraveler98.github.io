@@ -96,9 +96,6 @@ h2 {
 .cards-item__link {
   color: var(--third-color); }
 
-.last {
-  color: var(--primary-color); }
-
 .showcase {
   margin-top: 0;
   background-color: var(--secondary-color);
@@ -127,8 +124,7 @@ h2 {
   margin-top: 1rem;
   display: grid;
   gap: 20px;
-  grid-template-areas: 'cards cards recipe' 'cards cards recipe';
-  display: flex; }
+  grid-template-areas: 'cards cards recipe' 'cards cards recipe'; }
 
 .top-container-videos {
   max-width: 1200px;
@@ -142,7 +138,8 @@ h2 {
   display: grid;
   gap: 10px;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  flex-wrap: wrap; }
+  flex-wrap: wrap;
+  margin-right: 1rem; }
 
 .video-cards {
   grid-area: cards;
@@ -178,8 +175,7 @@ h2 {
   font-weight: bold; }
 
 .recipe {
-  max-width: 280px;
-  flex-direction: column;
+  max-width: 250px;
   box-shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
   border-radius: 12px; }
 
