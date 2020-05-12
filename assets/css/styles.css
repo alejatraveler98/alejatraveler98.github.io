@@ -97,7 +97,7 @@ h2 {
   color: var(--third-color); }
 
 .last {
-  color: var(--third-color); }
+  color: var(--primary-color); }
 
 .showcase {
   margin-top: 0;
@@ -123,6 +123,14 @@ h2 {
   background: green; }
 
 .top-container {
+  max-width: 1200px;
+  margin-top: 1rem;
+  display: grid;
+  gap: 20px;
+  grid-template-areas: 'cards cards recipe' 'cards cards recipe';
+  display: flex; }
+
+.top-container-videos {
   max-width: 1200px;
   margin-top: 1rem;
   display: grid;
@@ -170,11 +178,8 @@ h2 {
   font-weight: bold; }
 
 .recipe {
-  width: 280px;
-  display: flex;
+  max-width: 280px;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
   box-shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
   border-radius: 12px; }
 
@@ -225,5 +230,18 @@ h2 {
 .paragraph {
   padding-top: 1rem; }
 
+.footer-paragraph {
+  margin-bottom: 0; }
+
 .img {
-  color: white; }
+  color: white;
+  padding-right: 1rem; }
+
+.container {
+  max-width: 1200px;
+  margin-top: 1rem;
+  display: grid; }
+
+.organigrama {
+  width: 50%;
+  display: block; }

@@ -6,6 +6,18 @@
     grid-template-areas: 
     'cards cards recipe'
     'cards cards recipe';
+    display:flex;
+}
+
+.top-container-videos{
+    max-width: $max-width;
+    margin-top: 1rem;
+    display: grid;
+    gap: 20px;
+    grid-template-areas: 
+    'cards cards recipe'
+    'cards cards recipe';
+    
 }
 
 .cards{

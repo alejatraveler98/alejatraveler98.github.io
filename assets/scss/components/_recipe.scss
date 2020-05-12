@@ -1,15 +1,13 @@
 .recipe{
-    width:280px;
-    @include flex(column);
-    // margin-right: 1rem;
-    // margin-top: 1rem;
+    max-width:280px;
+    // @include flex(column);
+    // flex:1;
+    flex-direction: column;
     box-shadow: 0 1px 5px rgba(104,104,104,0.8);
     border-radius:12px;
-}
-
-.recipe:hover{
    
 }
+
 .recipe-card__title{
     margin-top:.8rem;
     margin-left: .8rem;
