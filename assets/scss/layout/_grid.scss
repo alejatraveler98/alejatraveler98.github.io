@@ -1,0 +1,75 @@
+//Se agrupa todo lo relacionado con Grid 
+
+//Contenedor principal
+.top-container{
+    max-width: $max-width;
+    margin-top: 1rem;
+    display: grid;
+    grid-template-areas: 'cards recipe';
+    grid-template-rows: 1fr;
+    grid-template-columns: 3fr 1fr;
+    // gap: 20px;
+    // grid-template-areas: 
+    // 'cards cards recipe'
+    // 'cards cards recipe';
+    // display: flex;
+    
+}
+//Contenedor de videos 
+.top-container-videos{
+    max-width: $max-width;
+    margin-top: 1rem;
+    display: grid;
+    gap: 20px;
+    // grid-template-areas: 
+    // 'cards recipe'
+    // 'cards recipe';
+    
+}
+
+
+
+//Sección de recetas de cocina 
+
+.cards{
+    grid-area: cards;
+    display:grid;
+    gap:10px;
+    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+    flex-wrap: wrap;
+    margin-right:1rem;
+}
+
+.video-cards{
+    grid-area: cards;
+    display:grid;
+    gap:10px;
+    grid-template-columns: repeat(auto-fill, minmax(290px,1fr));
+    flex-wrap: wrap; 
+}
+
+.recipe{
+    grid-area:recipe;
+    width:250px;
+    box-shadow: 0 1px 5px rgba(104,104,104,0.8);
+    border-radius:12px;
+    
+}
+
+
+//Responsive 
+
+// @media screen and(min-width:500px){
+    
+//     .top-container{
+//     grid-template-areas: 'recipe recipe'
+//                          'cards cards '                          
+//     ;
+//      grid-template-columns:1fr;
+//      grid-template-rows: 1fr;
+     
+
+//     // }
+// }
+ 
+// }

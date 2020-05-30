@@ -50,6 +50,41 @@ h2 {
   margin-right: 4rem;
   margin-left: 4rem; }
 
+.top-container {
+  max-width: 1200px;
+  margin-top: 1rem;
+  display: grid;
+  grid-template-areas: 'cards recipe';
+  grid-template-rows: 1fr;
+  grid-template-columns: 3fr 1fr; }
+
+.top-container-videos {
+  max-width: 1200px;
+  margin-top: 1rem;
+  display: grid;
+  gap: 20px; }
+
+.cards {
+  grid-area: cards;
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  flex-wrap: wrap;
+  margin-right: 1rem; }
+
+.video-cards {
+  grid-area: cards;
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
+  flex-wrap: wrap; }
+
+.recipe {
+  grid-area: recipe;
+  width: 250px;
+  box-shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+  border-radius: 12px; }
+
 .main-header {
   display: flex;
   flex-direction: column;
@@ -100,11 +135,6 @@ h2 {
   margin-top: 0;
   background-color: var(--secondary-color);
   height: auto;
-  display: grid;
-  grid-gap: 25px;
-  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
-  justify-content: space-between;
-  align-items: center;
   padding: 1.5rem 2.5rem; }
 
 .border {
@@ -118,35 +148,6 @@ h2 {
 
 .showcase-images {
   background: green; }
-
-.top-container {
-  max-width: 1200px;
-  margin-top: 1rem;
-  display: grid;
-  gap: 20px;
-  grid-template-areas: 'cards cards recipe' 'cards cards recipe'; }
-
-.top-container-videos {
-  max-width: 1200px;
-  margin-top: 1rem;
-  display: grid;
-  gap: 20px;
-  grid-template-areas: 'cards cards recipe' 'cards cards recipe'; }
-
-.cards {
-  grid-area: cards;
-  display: grid;
-  gap: 10px;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  flex-wrap: wrap;
-  margin-right: 1rem; }
-
-.video-cards {
-  grid-area: cards;
-  display: grid;
-  gap: 10px;
-  grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
-  flex-wrap: wrap; }
 
 .cards-container {
   padding: 1rem; }
@@ -174,11 +175,6 @@ h2 {
   text-decoration: underline;
   font-weight: bold; }
 
-.recipe {
-  max-width: 250px;
-  box-shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
-  border-radius: 12px; }
-
 .recipe-card__title {
   margin-top: .8rem;
   margin-left: .8rem;
@@ -199,13 +195,6 @@ h2 {
   text-decoration: underline;
   margin-bottom: 1rem;
   cursor: pointer; }
-
-.cards-recipe {
-  grid-area: cards;
-  display: grid;
-  gap: 10px;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  flex-wrap: wrap; }
 
 .text {
   font-size: .9rem;

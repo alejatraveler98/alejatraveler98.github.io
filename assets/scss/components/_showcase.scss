@@ -2,11 +2,12 @@
     margin-top:0;
     background-color:var(--secondary-color);
     height: auto;
-    display: grid;
-    grid-gap: 25px;
-    grid-template-columns: repeat(auto-fit, minmax(210px,1fr));
-    justify-content: space-between;
-    align-items: center;
+    //No se necesita porque ya colocamos una imagen como tal 
+    // display: grid;
+    // grid-gap: 25px;
+    // grid-template-columns: repeat(auto-fit, minmax(210px,1fr));
+    // justify-content: space-between;
+    // align-items: center;
     padding:1.5rem 2.5rem;
     
 }
@@ -17,9 +18,6 @@
     padding: .5rem;
 }
 
-.showcase-profile{
-
-}
 .showcase-title{
     color:white;
     background-color: red;
