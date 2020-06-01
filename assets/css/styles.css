@@ -54,9 +54,15 @@ h2 {
   max-width: 1200px;
   margin-top: 1rem;
   display: grid;
+  gap: 20px;
   grid-template-areas: 'cards recipe';
   grid-template-rows: 1fr;
   grid-template-columns: 3fr 1fr; }
+  @media screen and (max-width: 500px) {
+    .top-container {
+      grid-template-areas: 'recipe recipe' 'cards cards ';
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr; } }
 
 .top-container-videos {
   max-width: 1200px;
@@ -103,6 +109,22 @@ h2 {
 .main-nav {
   border-top: 1px solid var(--primary-color);
   border-bottom: 1px solid var(--primary-color); }
+  .main-nav.show {
+    display: block; }
+  @media screen and (max-width: 800px) {
+    .main-nav {
+      display: none;
+      border-bottom: 0; }
+      .main-nav .main-menu {
+        display: block;
+        padding-left: 0; }
+        .main-nav .main-menu__item {
+          border-bottom: 1px solid var(--primary-color);
+          margin-left: 0;
+          margin-right: 0;
+          margin-bottom: .1rem;
+          padding-left: 0;
+          padding-right: 0; } }
 
 .main-menu {
   display: flex;
@@ -110,9 +132,7 @@ h2 {
   justify-content: center;
   align-items: center;
   justify-content: space-between;
-  padding: 0 .5rem;
-  margin: 0 6rem 0 6rem;
-  flex: 1; }
+  padding: 0 .5rem; }
 
 .main-menu__item {
   width: 100%;
@@ -124,12 +144,26 @@ h2 {
 
 .main-menu__link {
   color: var(--normal-color); }
-
-.main-menu__link:hover {
-  color: var(--secondary-color); }
+  .main-menu__link:hover {
+    color: var(--secondary-color); }
 
 .cards-item__link {
   color: var(--third-color); }
+
+.toggle {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: .5rem; }
+
+.main-menu-toggle {
+  display: none;
+  width: 2.2rem;
+  height: 1.6rem;
+  background: linear-gradient(var(--primary-color) 20%, transparent 20%, transparent 40%, var(--primary-color) 40%, var(--primary-color) 60%, transparent 60%, transparent 80%, var(--primary-color) 80%);
+  margin-right: .5rem; }
+  @media screen and (max-width: 800px) {
+    .main-menu-toggle {
+      display: block; } }
 
 .showcase {
   margin-top: 0;

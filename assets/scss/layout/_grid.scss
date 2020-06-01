@@ -5,15 +5,24 @@
     max-width: $max-width;
     margin-top: 1rem;
     display: grid;
+    gap:20px;
     grid-template-areas: 'cards recipe';
     grid-template-rows: 1fr;
-    grid-template-columns: 3fr 1fr;
-    // gap: 20px;
-    // grid-template-areas: 
-    // 'cards cards recipe'
-    // 'cards cards recipe';
-    // display: flex;
+    grid-template-columns: 3fr 1fr;  
+
+    @media screen and(max-width:500px){
     
+    
+    grid-template-areas: 'recipe recipe'
+                         'cards cards '                          
+    ;
+     grid-template-columns:1fr;
+     grid-template-rows: 1fr;
+     
+
+    
+
+    }
 }
 //Contenedor de videos 
 .top-container-videos{
@@ -53,7 +62,6 @@
     width:250px;
     box-shadow: 0 1px 5px rgba(104,104,104,0.8);
     border-radius:12px;
-    
 }
 
 
@@ -69,7 +77,6 @@
 //      grid-template-rows: 1fr;
      
 
-//     // }
-// }
- 
+//     }
+
 // }
