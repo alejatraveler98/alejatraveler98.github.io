@@ -51,21 +51,23 @@ h2 {
   margin-left: 4rem; }
 
 .top-container {
-  max-width: 1200px;
+  max-width: 1250px;
   margin-top: 1rem;
   display: grid;
   gap: 20px;
   grid-template-areas: 'cards recipe';
   grid-template-rows: 1fr;
-  grid-template-columns: 3fr 1fr; }
-  @media screen and (max-width: 500px) {
+  grid-template-columns: 4fr 1fr; }
+  @media screen and (max-width: 650px) {
     .top-container {
       grid-template-areas: 'recipe recipe' 'cards cards ';
       grid-template-columns: 1fr;
-      grid-template-rows: 1fr; } }
+      grid-template-rows: 1fr; }
+      .top-container .recipe {
+        margin: auto; } }
 
 .top-container-videos {
-  max-width: 1200px;
+  max-width: 1250px;
   margin-top: 1rem;
   display: grid;
   gap: 20px; }
@@ -82,7 +84,7 @@ h2 {
   grid-area: cards;
   display: grid;
   gap: 10px;
-  grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
   flex-wrap: wrap; }
 
 .recipe {
@@ -258,18 +260,25 @@ h2 {
   padding-right: 1rem; }
 
 .container {
-  max-width: 1200px;
+  max-width: 1250px;
   margin-top: 1rem; }
 
 .container-information {
   display: flex;
   justify-content: space-around; }
+  @media screen and (max-width: 950px) {
+    .container-information {
+      flex-direction: column-reverse; }
+      .container-information .container-paragraph {
+        width: 100%; }
+      .container-information .profile-itzel {
+        width: 75%; } }
 
 .container-paragraph {
   width: 50%; }
 
 .profile-itzel {
-  width: 100%; }
+  width: 500px; }
 
 .objetivo {
   color: var(--primary-color); }

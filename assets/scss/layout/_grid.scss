@@ -8,10 +8,10 @@
     gap:20px;
     grid-template-areas: 'cards recipe';
     grid-template-rows: 1fr;
-    grid-template-columns: 3fr 1fr;  
-
-    @media screen and(max-width:500px){
+    grid-template-columns: 4fr 1fr;  
     
+    
+    @media screen and(max-width:650px){
     
     grid-template-areas: 'recipe recipe'
                          'cards cards '                          
@@ -20,7 +20,9 @@
      grid-template-rows: 1fr;
      
 
-    
+    .recipe{
+        margin: auto;
+    }
 
     }
 }
@@ -30,10 +32,6 @@
     margin-top: 1rem;
     display: grid;
     gap: 20px;
-    // grid-template-areas: 
-    // 'cards recipe'
-    // 'cards recipe';
-    
 }
 
 
@@ -47,13 +45,14 @@
     grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
     flex-wrap: wrap;
     margin-right:1rem;
+    
 }
 
 .video-cards{
     grid-area: cards;
     display:grid;
     gap:10px;
-    grid-template-columns: repeat(auto-fill, minmax(290px,1fr));
+    grid-template-columns: repeat(auto-fit, minmax(290px,1fr));
     flex-wrap: wrap; 
 }
 
