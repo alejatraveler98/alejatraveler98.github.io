@@ -50,6 +50,49 @@ h2 {
   margin-right: auto;
   margin-left: auto; }
 
+.top-container {
+  max-width: 1250px;
+  margin-top: 1rem;
+  display: grid;
+  gap: 20px;
+  grid-template-areas: 'cards recipe';
+  grid-template-rows: 1fr;
+  grid-template-columns: 4fr 1fr; }
+  @media screen and (max-width: 650px) {
+    .top-container {
+      grid-template-areas: 'recipe recipe' 'cards cards ';
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr; }
+      .top-container .recipe {
+        margin: auto; } }
+
+.top-container-videos {
+  max-width: 1250px;
+  margin-top: 1rem;
+  display: grid;
+  gap: 20px; }
+
+.cards {
+  grid-area: cards;
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  flex-wrap: wrap;
+  margin-right: 1rem; }
+
+.video-cards {
+  grid-area: cards;
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+  flex-wrap: wrap; }
+
+.recipe {
+  grid-area: recipe;
+  width: 250px;
+  box-shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+  border-radius: 12px; }
+
 .main-header {
   display: flex;
   flex-direction: column;
@@ -68,6 +111,22 @@ h2 {
 .main-nav {
   border-top: 1px solid var(--primary-color);
   border-bottom: 1px solid var(--primary-color); }
+  .main-nav.show {
+    display: block; }
+  @media screen and (max-width: 800px) {
+    .main-nav {
+      display: none;
+      border-bottom: 0; }
+      .main-nav .main-menu {
+        display: block;
+        padding-left: 0; }
+        .main-nav .main-menu__item {
+          border-bottom: 1px solid var(--primary-color);
+          margin-left: 0;
+          margin-right: 0;
+          margin-bottom: .1rem;
+          padding-left: 0;
+          padding-right: 0; } }
 
 .main-menu {
   display: flex;
@@ -75,9 +134,7 @@ h2 {
   justify-content: center;
   align-items: center;
   justify-content: space-between;
-  padding: 0 .5rem;
-  margin: 0 6rem 0 6rem;
-  flex: 1; }
+  padding: 0 .5rem; }
 
 .main-menu__item {
   width: 100%;
@@ -89,22 +146,31 @@ h2 {
 
 .main-menu__link {
   color: var(--normal-color); }
-
-.main-menu__link:hover {
-  color: var(--secondary-color); }
+  .main-menu__link:hover {
+    color: var(--secondary-color); }
 
 .cards-item__link {
   color: var(--third-color); }
+
+.toggle {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: .5rem; }
+
+.main-menu-toggle {
+  display: none;
+  width: 2.2rem;
+  height: 1.6rem;
+  background: linear-gradient(var(--primary-color) 20%, transparent 20%, transparent 40%, var(--primary-color) 40%, var(--primary-color) 60%, transparent 60%, transparent 80%, var(--primary-color) 80%);
+  margin-right: .5rem; }
+  @media screen and (max-width: 800px) {
+    .main-menu-toggle {
+      display: block; } }
 
 .showcase {
   margin-top: 0;
   background-color: var(--secondary-color);
   height: auto;
-  display: grid;
-  grid-gap: 25px;
-  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
-  justify-content: space-between;
-  align-items: center;
   padding: 1.5rem 2.5rem; }
 
 .border {
@@ -118,35 +184,6 @@ h2 {
 
 .showcase-images {
   background: green; }
-
-.top-container {
-  max-width: 1200px;
-  margin-top: 1rem;
-  display: grid;
-  gap: 20px;
-  grid-template-areas: 'cards cards recipe' 'cards cards recipe';
-  display: flex; }
-
-.top-container-videos {
-  max-width: 1200px;
-  margin-top: 1rem;
-  display: grid;
-  gap: 20px;
-  grid-template-areas: 'cards cards recipe' 'cards cards recipe'; }
-
-.cards {
-  grid-area: cards;
-  display: grid;
-  gap: 10px;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  flex-wrap: wrap; }
-
-.video-cards {
-  grid-area: cards;
-  display: grid;
-  gap: 10px;
-  grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
-  flex-wrap: wrap; }
 
 .cards-container {
   padding: 1rem; }
@@ -173,12 +210,6 @@ h2 {
   cursor: pointer;
   text-decoration: underline;
   font-weight: bold; }
-
-.recipe {
-  grid-area: recipe;
-  max-width: 250px;
-  box-shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
-  border-radius: 12px; }
 
 .recipe-card__title {
   margin-top: .8rem;
@@ -229,18 +260,25 @@ h2 {
   padding-right: 1rem; }
 
 .container {
-  max-width: 1200px;
+  max-width: 1250px;
   margin-top: 1rem; }
 
 .container-information {
   display: flex;
   justify-content: space-around; }
+  @media screen and (max-width: 950px) {
+    .container-information {
+      flex-direction: column-reverse; }
+      .container-information .container-paragraph {
+        width: 100%; }
+      .container-information .profile-itzel {
+        width: 75%; } }
 
 .container-paragraph {
   width: 50%; }
 
 .profile-itzel {
-  width: 100%; }
+  width: 500px; }
 
 .objetivo {
   color: var(--primary-color); }

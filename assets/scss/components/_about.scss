@@ -3,16 +3,30 @@
     margin-top: 1rem;
   
 }
+
 .container-information{
     display: flex;
     justify-content: space-around;
+
+    @media screen and(max-width:950px){
+        flex-direction: column-reverse;
+        .container-paragraph{
+            width:100%;
+        }
+
+        .profile-itzel{
+            width:75%;
+        }
+    }
 }
+
+
 
 .container-paragraph{
     width: 50%;
 }
 .profile-itzel{
-    width: 100%;
+    width:500px;
 }
 
 .objetivo{
