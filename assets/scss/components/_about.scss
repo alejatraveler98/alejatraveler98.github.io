@@ -2,9 +2,7 @@
     max-width: $max-width;
     margin-top: 1rem;
   
-}
-
-.container-information{
+    &-information{
     display: flex;
     justify-content: space-around;
 
@@ -18,9 +16,8 @@
             width:75%;
         }
     }
+    }
 }
-
-
 
 .container-paragraph{
     width: 50%;
