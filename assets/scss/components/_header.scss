@@ -96,3 +96,83 @@
 }
 
 
+// Estilos Carrito 
+
+.carrito-img{
+    fill:red;
+}
+.submenu {
+    position: relative;
+}
+
+.submenu #carrito{
+    display: none;
+}
+// .submenu:hover #carrito{
+//     display: block;
+//     position: absolute;
+//     right:0;
+
+//     top:100%;
+//     z-index: 1;
+//     background-color: white;
+//     padding: 20px;
+//     min-height: 400px;
+//     min-width: 300px;
+// }
+
+.borrar-curso {
+    background-color: red;
+    border-radius: 50%;
+    padding: 5px 10px;
+    color: white;
+    font-weight: bold;
+}
+
+.u-full-width{
+    width: 100%;
+}
+
+.items{
+    display: flex;
+    // justify-content: center;
+    color:red;
+}
+.recetario-imagen{
+    width:140px;
+}
+
+.container{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom:10rem;
+    height:100%;
+}
+
+// .confirmed{
+    
+    
+//     &.show2{
+//         display:block;
+//     }
+// }
+
+.confirmed{
+    display: none;
+    position: absolute;
+    bottom:-550px;
+    right:0;
+    // animation: blured 4s forwards;
+    padding:1rem;
+    background-color: gray;
+}
+
+.confirmed-none{
+    display:none;
+}
+
+@keyframes blured {
+    0% {filter: blur(0px)}
+    100% {filter: blur(350px)}
+  }

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="shortcut icon" href="/assets/img/favicon.jpeg" type="image/x-icon">
+
+    <title>Verde Vivir</title>
+</head>
+
+<body>
+    <header class="main-header">
+        <img class="img" src="/assets/img/LogoVerdeVivir.png" alt="Logo Verde Vivir">
+        <h2 class="main-header__title">Animate por un consumo sostenible</h2>
+    </header>
+    <nav class="main-nav">
+        <ul class="main-menu">
+            <li class="main-menu__item"><a class="main-menu__link center-content fixed_1" href="index.html">Inicio</a>
+            </li>
+            <li class="main-menu__item"><a class="main-menu__link center-content fixed_2"
+                    href="recetas.html">Recetas</a></li>
+            <li class="main-menu__item"><a class="main-menu__link center-content fixed_3" href="videos.html">Videos</a>
+            </li>
+            <li class="main-menu__item"><a class="main-menu__link center-content fixed_4 last" href="sobremi.html">Sobre
+                    mí </a></li>
+            <li class="main-menu__item submenu" id="car-2">
+                <img class="carrito-img"src="assets/img/cart-plus-solid.svg" width="30px" height="30px" alt="">
+                <div id="carrito">
+
+                    <table id="lista-carrito" class="u-full-width">
+                        <thead>
+                            <tr>
+                                <th>Imagen</th>
+                                <th>Nombre</th>
+                                <th>Precio</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody></tbody>
+                    </table>
+
+                    <a href="#" id="vaciar-carrito" class="button u-full-width">Vaciar Carrito</a>
+                </div>
+            </li>
+        </ul>
+    </nav>
+
+    <template id="template">
+        <div  class="items">
+
+            <div class="recetario-imagen"></div>
+            <h1 class="titulo"></h1>
+            <p></p>
+            <span></span>
+
+        </div>
+    </template>
+
+
+
+
+    <div class="l-container container">
+        <div>
+            <div id="container-car">
+    
+            </div>
+            
+            <div id="total">Total= <span id="precio"></span></div> 
+        </div>
+
+        <div class="btn-paypal">
+            <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                <input type="hidden" name="cmd" value="_s-xclick">
+                <input type="hidden" name="hosted_button_id" value="DZY2D6DSMPYML">
+                <input type="image" src="https://www.paypalobjects.com/es_XC/MX/i/btn/btn_paynowCC_LG.gif" border="0" name="submit" alt="PayPal, la forma más segura y rápida de pagar en línea.">
+                <!-- <input type="image" src="https://www.paypalobjects.com/marketing/web/mx/logos-buttons/PP_logo_200x127.png" border="0" name="submit" alt="PayPal, la forma más segura y rápida de pagar en línea."> -->
+                <img alt="" border="0" src="https://www.paypalobjects.com/es_XC/i/scr/pixel.gif" width="1" height="1">
+                </form>
+                
+        </div>
+    </div>
+
+
+    <footer class="footer">
+        <p class=" paragraph center-content">¡Sigueme!</p>
+        <div class="icons-footer">
+            <img class="img" src="/assets/img/facebook-f-brands.svg" width="40px" height="40px" alt="Facebook">
+            <img class="img" src="/assets/img/instagram-brands.svg" width="40px" height="40px" alt="Instagram">
+            <img class="img" src="/assets/img/youtube-brands.svg" width="40px" height="40px" alt="Instagram">
+        </div>
+        <div class="center-content"> <a href="/organigrama.html" class="footer-paragraph ">2020 Lambda</a></div>
+
+
+    </footer>
+
+    <script src="/assets/js/main.js"></script>
+    <script src="/assets/js/local.js"></script>
+</body>
+
+</html>

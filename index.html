@@ -15,7 +15,7 @@
         <h2 class="main-header__title">Animate por un consumo sostenible</h2>
     </header>
     
-    <div class="toggle"><div class="main-menu-toggle" id="main-menu-toggle"></div></div>
+    <div class="toggle"><div class="main-menu-toggle" id="main-emnu-toggle"></div></div>
     
     <nav class="main-nav" id="main-nav">
         <ul class="main-menu">
@@ -24,6 +24,27 @@
             <li class="main-menu__item"><a class="main-menu__link center-content fixed_2" href="recetas.html">Recetas</a></li>
             <li class="main-menu__item"><a class="main-menu__link center-content fixed_3" href="videos.html">Videos</a></li>
             <li class="main-menu__item"><a class="main-menu__link center-content fixed_4  last" href="sobremi.html">Sobre mí </a></li>
+
+            <!-- Codigo a agregar en todas las paginas  -->
+            <li class="main-menu__item submenu"  id="car-2">
+                <img src="assets/img/cart-plus-solid.svg" width="30px" height="30px" alt="">
+                <div id="carrito">
+                                    
+                    <table id="lista-carrito" class="u-full-width">
+                        <thead>
+                            <tr>
+                                <th>Imagen</th>
+                                <th>Nombre</th>
+                                <th>Precio</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody></tbody>
+                    </table>
+
+                    <a href="#" id="vaciar-carrito" class="button u-full-width">Vaciar Carrito</a>
+            </div>
+            </li>
         </ul>
     </nav>
     
@@ -114,28 +135,28 @@
                  
              </section>
  
-             <aside class="recipe">
-                 <div class="recipe-container">
-                     <div class="recipe-card">
+             <aside class="recipe" >
+                 <div class="recipe-container" >
+                     <div class="recipe-card"  >
                          <h2 class="recipe-card__title">Recetario</h2>
                          <img class="recipe-image" src="assets/img/recetario.jpg" alt="Recetario">
                          <p class="recipe-card__paragraph">Todo para tener una cena navideña libre
                              de culpas <br>
-                             Por tan solo $99 pesos
+                             Por tan solo $<span class="precio">99</span> pesos
                          </p>
-                         <a class="recipe-card__link" href="#">Adquiere tu rectario</a>
+                         <a id="recetario" class="recipe-card__link"  href="#" data-id="2">Adquiere tu rectario</a>
                      </div>
                  </div>
  
                  <div class="recipe-container">
-                     <div class="recipe-card">
-                         <img src="assets/img/taller.jpg" alt="Taller">
+                     <div class="recipe-card" >
                          <h2 class="recipe-card__title">Talleres</h2>
+                         <img  class="recipe-image" src="assets/img/taller.jpg" alt="Taller">
                          <p class="recipe-card__paragraph">Taller de cena navideña fit y deliciosa
                              Amigxs Diana Kraules y yo vamos a hacer un taller
                              especialmente para ustedes el 8 de Diciembre
                          </p>
-                         <a class="recipe-card__link" href="#">!Inscribite aquí!</a>
+                         <a  id="recetario" class="recipe-card__link"  href="#"><span class="precio">!Inscribite aquí!</span></a>
                      </div>
                  </div>
              </aside>
@@ -153,8 +174,13 @@
        <div class="center-content"> <a href="/organigrama.html" class="footer-paragraph ">2020 Lambda</a></div>
     </footer>
 
-    <script src="/assets/js/main.js"></script>
+    <div id="confirmed" class="confirmed"><div id="confirmedCustom" class="confirmedCustom">Su compra se ha agregado al carrito</div></div>
 
+    <script src="/assets/js/main.js"></script>
+    <script src="/assets/js/car.js"></script>
+    <script src="/assets/js/local.js"></script>
+
+    
 </body>
 
 </html>
