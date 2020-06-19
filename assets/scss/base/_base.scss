@@ -36,3 +36,10 @@ h2{
     font-size: var(--h2-font-size);
 }
 
+table{
+    margin-top:1rem;
+}
+th, td {
+    padding: 40px;
+    border: 1px solid black;
+  }

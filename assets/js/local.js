@@ -7,6 +7,7 @@ const vaciarCarritoBtn = document.getElementById('vaciar-carrito')
 const total=document.getElementById('precio')
 let URL = window.location.pathname;
 
+const newTemplate2 = document.getElementById('template2')
 
 
 const comprarRecetario = (e) => {
@@ -93,14 +94,34 @@ const leerLocalStorage = () => {
         const myNewTemplate = template.content.cloneNode(true)
         myNewTemplate.querySelector('div div').innerHTML = `<img src="${infoRecipe.imagen}" alt="" width="100px">`
         myNewTemplate.querySelector('h1').textContent = `${infoRecipe.nombre}`
-        myNewTemplate.querySelector('p').textContent = `${infoRecipe.precio}`
-        myNewTemplate.querySelector('span').innerHTML = `<a href="#" class="borrar-curso" data-id="${infoRecipe.id}">X</a>`
+        myNewTemplate.querySelector('p').textContent = `$ ${infoRecipe.precio} MXN`
+        // myNewTemplate.querySelector('span').innerHTML = `<a href="#" class="borrar-curso" data-id="${infoRecipe.id}">X</a>`
+        myNewTemplate.querySelector('span').innerHTML = `<img class="eliminar" src="/assets/img/eliminar1.png" alt=""> <a href="#" class="borrar-curso" data-id="${infoRecipe.id}">Eliminar</a>`
         document.getElementById('container-car').appendChild(myNewTemplate)
         // sumar(recetasLS.precio)
     })
 
 }
 
+// const precio2=()=>{
+//     let precio=sumar();
+//     const myTemplate= newTemplate2.content.cloneNode(true)
+//     myTemplate.querySelector('span').textContent= `${precio}`
+//     document.getElementById('js').appendChild(myTemplate)
+// }
+
+
+const precio = () => {
+
+    let precio=sumar();
+    const precio2= document.createElement('div');
+    precio2.innerHTML = `<span id="precio"> $${precio}MXN </span>`
+    // total.appendChild(precio2)
+    let objetivo = document.getElementById('precio')
+    objetivo.parentNode.replaceChild(precio2,objetivo)
+}
+
+//Va antes de precio XD
 const sumar = () => {
     let total=0;
     let suma=obtenerLocalStorage();
@@ -111,15 +132,6 @@ const sumar = () => {
     return total;
 }
 
-const precio = () => {
-
-    let precio=sumar();
-    const precio2= document.createElement('div');
-    precio2.innerHTML = `<span id="precio">${precio}</span>`
-    // total.appendChild(precio2)
-    let objetivo = document.getElementById('precio')
-    objetivo.parentNode.replaceChild(precio2,objetivo)
-}
 
 
 function guardarRecetarioLocalStorage(Recipe) {
@@ -135,13 +147,12 @@ const eliminarCursos = (e) => {
     let recetario;
     let recetarioId;
     if (e.target.classList.contains('borrar-curso')) {
-        e.target.parentElement.parentElement.remove()
+        e.target.parentElement.parentElement.parentElement.remove()
         recetario = e.target.parentElement.parentElement;
         recetarioId = recetario.querySelector('span a').getAttribute('data-id')
        
     }
     eliminarCursoLocalStorage(recetarioId)
-    //sumar()
     
 }
 
@@ -176,8 +187,8 @@ function redireccionar() {
 
 const showconf = ()=>{
     
-    const confirmed=document.getElementById('confirmed');
-    confirmed.style.display='block';
+    // const confirmed=document.getElementById('confirmed');
+    // confirmed.style.display='block';
 }
 
 
@@ -185,11 +196,12 @@ const showconf = ()=>{
 const cargarEventListeners = () => {
     //Dispara cuando se presiona "Agregar carrito"
     
-    if (URL === '/index.html') {
-        recipe.addEventListener('click', comprarRecetario,showconf());
+    if (URL === '/index.html'  || URL=== '/recetas.html'  || URL=== '/recetas/hotcakes.html'  || URL=== '/recetas/mugcake.html'
+    || URL=== '/recetas/pay-manzana.html' || URL=== '/recetas/pizza.html' || URL=== '/recetas/quesadilla-vegana.html' || URL=== '/recetas/spagueti.html')  {
+        recipe.addEventListener('click', comprarRecetario);
         
 
-    }
+     }
 
     //Cuando se elimina un recetario del carrito
     if (URL === '/carrito.html') {
@@ -203,6 +215,6 @@ const cargarEventListeners = () => {
     //
     idcar.addEventListener('click', redireccionar);
 
-    vaciarCarritoBtn.addEventListener('click', vaciarCarrito);
+    // vaciarCarritoBtn.addEventListener('click', vaciarCarrito);
 }
 cargarEventListeners();

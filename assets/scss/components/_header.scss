@@ -108,24 +108,52 @@
 .submenu #carrito{
     display: none;
 }
-// .submenu:hover #carrito{
-//     display: block;
-//     position: absolute;
-//     right:0;
 
-//     top:100%;
-//     z-index: 1;
-//     background-color: white;
-//     padding: 20px;
-//     min-height: 400px;
-//     min-width: 300px;
-// }
+.recetario-titulo{
+    color:var(--primary-color);
+    font-size: 1.5rem;
+    
+}
 
+.recetario-container{
+    margin-left:1rem;
+
+}
+
+.pay{
+    
+    margin: auto;
+    width:150px;
+    height:150px;
+}
+
+.btn-img{
+    position: relative;
+}
+
+.paragraph-pay{
+    position: absolute;
+    bottom:20px;
+    left:60px; 
+    font-size: 1.2rem;
+}
+
+.total{
+    display: flex;
+    justify-content: center;
+    font-family: Merienda;
+    margin-top:1rem;
+    margin-bottom: 1rem;
+}
+
+.eliminar{
+    width:20px;
+}
 .borrar-curso {
-    background-color: red;
-    border-radius: 50%;
-    padding: 5px 10px;
-    color: white;
+    font-family: Roboto;
+    color: red;
+    // border-radius: 50%;
+    // padding: 5px 10px;
     font-weight: bold;
 }
 
@@ -135,7 +163,7 @@
 
 .items{
     display: flex;
-    // justify-content: center;
+    
     color:red;
 }
 .recetario-imagen{
@@ -147,15 +175,18 @@
     justify-content: space-around;
     align-items: center;
     margin-bottom:10rem;
+    margin-top:1.5rem;
     height:100%;
+    font-family: Roboto;
+    font-weight: bold;
 }
 
 // .confirmed{
     
     
-//     &.show2{
-//         display:block;
-//     }
+    //     &.show2{
+        //         display:block;
+        //     }
 // }
 
 .confirmed{
