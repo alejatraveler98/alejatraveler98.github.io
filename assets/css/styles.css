@@ -39,6 +39,13 @@ h1 {
 h2 {
   font-size: var(--h2-font-size); }
 
+table {
+  margin-top: 1rem; }
+
+th, td {
+  padding: 40px;
+  border: 1px solid black; }
+
 .center-block {
   margin-left: auto;
   margin-right: auto; }
@@ -164,6 +171,91 @@ h2 {
   justify-content: flex-end;
   margin-bottom: .5rem; }
 
+<<<<<<< HEAD
+=======
+.carrito-img {
+  fill: red; }
+
+.submenu {
+  position: relative; }
+
+.submenu #carrito {
+  display: none; }
+
+.recetario-titulo {
+  color: var(--primary-color);
+  font-size: 1.5rem; }
+
+.recetario-container {
+  margin-left: 1rem; }
+
+.pay {
+  margin: auto;
+  width: 150px;
+  height: 150px; }
+
+.btn-img {
+  position: relative; }
+
+.paragraph-pay {
+  position: absolute;
+  bottom: 20px;
+  left: 60px;
+  font-size: 1.2rem; }
+
+.total {
+  display: flex;
+  justify-content: center;
+  font-family: Merienda;
+  margin-top: 1rem;
+  margin-bottom: 1rem; }
+
+.eliminar {
+  width: 20px; }
+
+.borrar-curso {
+  font-family: Roboto;
+  color: red;
+  font-weight: bold; }
+
+.u-full-width {
+  width: 100%; }
+
+.items {
+  display: flex;
+  color: red; }
+
+.recetario-imagen {
+  width: 140px; }
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 10rem;
+  margin-top: 1.5rem;
+  height: 100%;
+  font-family: Roboto;
+  font-weight: bold; }
+
+.confirmed {
+  display: none;
+  position: absolute;
+  bottom: -550px;
+  right: 0;
+  padding: 1rem;
+  background-color: gray; }
+
+.confirmed-none {
+  display: none; }
+
+@keyframes blured {
+  0% {
+    filter: blur(0px); }
+  100% {
+    filter: blur(350px); } }
+
+>>>>>>> car
 .showcase {
   margin-top: 0;
   background-color: var(--secondary-color);
@@ -256,19 +348,20 @@ h2 {
   color: white;
   padding-right: 1rem; }
 
-.container {
+.container-about {
   max-width: 1250px;
   margin-top: 1rem; }
-  .container-information {
-    display: flex;
-    justify-content: space-around; }
-    @media screen and (max-width: 950px) {
-      .container-information {
-        flex-direction: column-reverse; }
-        .container-information .container-paragraph {
-          width: 100%; }
-        .container-information .profile-itzel {
-          width: 75%; } }
+
+.container-information {
+  display: flex;
+  justify-content: space-around; }
+  @media screen and (max-width: 950px) {
+    .container-information {
+      flex-direction: column-reverse; }
+      .container-information .container-paragraph {
+        width: 100%; }
+      .container-information .profile-itzel {
+        width: 75%; } }
 
 .container-paragraph {
   width: 50%; }
@@ -281,3 +374,31 @@ h2 {
 
 .organigrama {
   width: 60%; }
+
+.button,
+button,
+input[type="submit"],
+input[type="reset"],
+input[type="button"] {
+  display: inline-block;
+  height: 38px;
+  padding: 0 30px;
+  color: #555;
+  text-align: center;
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 38px;
+  letter-spacing: .1rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  white-space: nowrap;
+  background-color: transparent;
+  border-radius: 4px;
+  border: 1px solid #bbb;
+  cursor: pointer;
+  box-sizing: border-box; }
+
+.table-title {
+  color: var(--primary-color);
+  font-weight: bold;
+  font-size: 1.3rem; }

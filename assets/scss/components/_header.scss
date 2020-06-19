@@ -96,3 +96,114 @@
 }
 
 
+// Estilos Carrito 
+
+.carrito-img{
+    fill:red;
+}
+.submenu {
+    position: relative;
+}
+
+.submenu #carrito{
+    display: none;
+}
+
+.recetario-titulo{
+    color:var(--primary-color);
+    font-size: 1.5rem;
+    
+}
+
+.recetario-container{
+    margin-left:1rem;
+
+}
+
+.pay{
+    
+    margin: auto;
+    width:150px;
+    height:150px;
+}
+
+.btn-img{
+    position: relative;
+}
+
+.paragraph-pay{
+    position: absolute;
+    bottom:20px;
+    left:60px; 
+    font-size: 1.2rem;
+}
+
+.total{
+    display: flex;
+    justify-content: center;
+    font-family: Merienda;
+    margin-top:1rem;
+    margin-bottom: 1rem;
+}
+
+.eliminar{
+    width:20px;
+}
+.borrar-curso {
+    font-family: Roboto;
+    color: red;
+    // border-radius: 50%;
+    // padding: 5px 10px;
+    font-weight: bold;
+}
+
+.u-full-width{
+    width: 100%;
+}
+
+.items{
+    display: flex;
+    
+    color:red;
+}
+.recetario-imagen{
+    width:140px;
+}
+
+.container{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom:10rem;
+    margin-top:1.5rem;
+    height:100%;
+    font-family: Roboto;
+    font-weight: bold;
+}
+
+// .confirmed{
+    
+    
+    //     &.show2{
+        //         display:block;
+        //     }
+// }
+
+.confirmed{
+    display: none;
+    position: absolute;
+    bottom:-550px;
+    right:0;
+    // animation: blured 4s forwards;
+    padding:1rem;
+    background-color: gray;
+}
+
+.confirmed-none{
+    display:none;
+}
+
+@keyframes blured {
+    0% {filter: blur(0px)}
+    100% {filter: blur(350px)}
+  }

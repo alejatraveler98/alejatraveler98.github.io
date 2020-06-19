@@ -1,12 +1,12 @@
-.container{
+.container-about{
     max-width: $max-width;
     margin-top: 1rem;
-  
-    &-information{
-    display: flex;
-    justify-content: space-around;
-
-    @media screen and(max-width:950px){
+}  
+    .container-information{
+        display: flex;
+        justify-content: space-around;
+        
+        @media screen and(max-width:950px){
         flex-direction: column-reverse;
         .container-paragraph{
             width:100%;
@@ -17,7 +17,7 @@
         }
     }
     }
-}
+
 
 .container-paragraph{
     width: 50%;

@@ -18,7 +18,13 @@
             <li class="main-menu__item"><a class="main-menu__link center-content fixed_1" href="../index.html">Inicio</a></li>
             <li class="main-menu__item"><a class="main-menu__link center-content fixed_2" href="../recetas.html">Recetas</a></li>
             <li class="main-menu__item"><a class="main-menu__link center-content fixed_3" href="../videos.html">Videos</a></li>
-            <li class="main-menu__item"><a class="main-menu__link center-content fixed_4 last" href="../sobremi.html">Sobre mí </a></li>
+            <li class="main-menu__item"><a class="main-menu__link center-content" href="productos.html">Productos </a>
+                <li class="main-menu__item"><a class="main-menu__link center-content fixed_4 last" href="sobremi.html">Sobre mí </a></li>
+                </li>
+    
+                <li class="main-menu__item submenu" id="car-2">
+                    <img src="/assets/img/tienda.svg " width="30px" height="30px" alt="Carrito">
+                </li>
         </ul>
     </nav>
     
@@ -76,9 +82,9 @@ Excelente inicio de semana amigxs, se les quiere 😘
                         <img src="/assets/img/recetario.jpg" alt="Recetario">
                         <p class="recipe-card__paragraph">Todo para tener una cena navideña libre
                             de culpas <br>
-                            Por tan solo $99 pesos
+                            Por tan solo $<span class="precio">99</span> pesos
                         </p>
-                        <a class="recipe-card__link" href="#">Adquiere tu rectario</a>
+                        <a id="recetario" class="recipe-card__link"  href="#" data-id="5">Agrega al carrito</a> 
                     </div>
                 </div>
     
@@ -109,5 +115,7 @@ Excelente inicio de semana amigxs, se les quiere 😘
 
     </footer>
     <script src="/assets/js/main.js"></script>
+    <script src="/assets/js/car.js"></script>
+    <script src="/assets/js/local.js"></script>
 </body>
 </html>
