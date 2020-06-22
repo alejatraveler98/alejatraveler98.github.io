@@ -171,8 +171,6 @@ th, td {
   justify-content: flex-end;
   margin-bottom: .5rem; }
 
-<<<<<<< HEAD
-=======
 .carrito-img {
   fill: red; }
 
@@ -255,7 +253,6 @@ th, td {
   100% {
     filter: blur(350px); } }
 
->>>>>>> car
 .showcase {
   margin-top: 0;
   background-color: var(--secondary-color);
